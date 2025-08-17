@@ -12,6 +12,6 @@ NOTICE: GitHub is not a mechanism for receiving support under any agreement or S
 
 If you are interested in contributing, start with the [CONTRIBUTING](CONTRIBUTING.md) guide.
 
-# Salesforce DX MCP Server Documentation 
+<!-- # Salesforce DX MCP Server Documentation 
 
-TODO: Link to online docs?
+TODO: Link to online docs? -->

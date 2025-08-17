@@ -6,9 +6,9 @@ We publish a new `latest` version of Salesforce DX MCP Server on Wednesdays. At 
 
 Report and read about issues [here](https://github.com/forcedotcom/mcp/issues). Join the discussion about new features we're considering [here](https://github.com/forcedotcom/mcp/discussions). 
 
-Additional documentation:
+<!-- Additional documentation:
 
-TODO: Add links to online docs?
+TODO: Add links to online docs? -->
 
 ## 0.17.1 (August 17, 2025) [latest]
 
