@@ -1,0 +1,16 @@
+name: "post-comment"
+description: "Automate responses on Github issues."
+author: "Platform CLI"
+inputs:
+  repo-token:
+    required: true
+    description: "Token taken from secrets env var"
+  message:
+    required: true
+    description: "Message to post in issue comment"
+  label:
+    required: false
+    description: "A label the issue must contain to post the message"
+runs:
+  using: "node20"
+  main: "lib/index.js"

@@ -1,0 +1,47 @@
+name: "new-label-added"
+on: # any labels added to an issue
+  issues:
+    types: [labeled]
+
+jobs:
+  new-issue:
+    if: ${{ github.event.label.name == 'investigating' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.0.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - name: Install dependencies
+        run: yarn install
+      - name: issue comment
+        id: issue_comment
+        uses: ./.github/actions/post-comment
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          label: "investigating"
+          message: >
+            Thank you for filing this issue.  We appreciate your feedback and will review the issue as soon as possible.
+            Remember, however, that GitHub isn't a mechanism for receiving support under any agreement or SLA.
+            If you require immediate assistance, contact Salesforce Customer Support.
+  owned-by-other-team:
+    if: ${{ github.event.label.name == 'owned by another team' && !contains(github.event.issue.labels.*.name, 'feature') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.0.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - name: Install dependencies
+        run: yarn install
+      - name: issue comment
+        id: issue_comment
+        uses: ./.github/actions/post-comment
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          label: "owned by another team"
+          message: >
+            We have determined that the issue you reported exists in code owned by another team that uses only the official support channels.
+            To ensure that your issue is addressed, open an official [Salesforce customer support](https://help.salesforce.com/s/) ticket with a link to this issue.
+            We encourage anyone experiencing this issue to do the same to increase the priority. We will keep this issue open for the community to collaborate on.
+

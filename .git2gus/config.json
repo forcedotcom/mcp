@@ -1,0 +1,10 @@
+{
+    "productTag": "a1aEE000001TMHVYA4",
+    "defaultBuild": "offcore.tooling.58",
+    "issueTypeLabels": { "feature": "USER STORY", "bug": "BUG P3" },
+    "hideWorkItemUrl": false,
+    "statusWhenClosed": "CLOSED",
+    "issueEpicMapping": {
+        "BUG P3": "a3QB00000004yR1MAI"
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./.github/actions/post-comment" }
+  ]
+}

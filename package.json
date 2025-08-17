@@ -1,0 +1,34 @@
+{
+  "name": "mcp",
+  "version": "1.0.0",
+  "description": "Issues Only repository for the community to submit feedback, raise issues and propose enhancements to the Salesforce DX MCP Server.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forcedotcom/mcp.git"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build && git add .github/actions/**/lib"
+    }
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  },
+  "devDependencies": {
+    "@octokit/webhooks-definitions": "^3.67.3",
+    "@salesforce/dev-config": "^2.0.0",
+    "@types/node": "^20.11.17",
+    "husky": "^4.3.0",
+    "prettier": "^1.19.1",
+    "typescript": "4.9.5"
+  },
+  "bugs": {
+    "url": "https://github.com/forcedotcom/mcp/issues"
+  },
+  "homepage": "https://github.com/forcedotcom/mcp#readme"
+}
