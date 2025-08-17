@@ -6,8 +6,8 @@ labels: 'investigating'
 assignees: ''
 
 ---
-> **Note** 
-> Before you submit your issue, make sure that:
+> [!Important]
+> **Before you submit your issue, make sure that:**
 > - You're using the latest version of Salesforce DX MCP Server.
 >    - This can be force by using `@salesforce/mcp@latest` in your MCP config json
 > - You've searched both open and closed issues for related posts.
