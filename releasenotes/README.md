@@ -2,13 +2,16 @@
 
 Here are the new and changed features in recent updates of Salesforce DX MCP Server.
 
-We publish a new `latest` version of Salesforce DX MCP Server on Wednesdays. At the same time we also publish a release candidate (`latest-rc`) that contains changes that will likely be in next week's stable release. Merges into `main` are published as `nightly`. Run `npx --offline @salesforce/mcp --version` to display the version installed on your computer. 
+We publish a new stable (that has the `latest` tag) version of Salesforce DX MCP Server on Wednesdays. At the same time we also publish a release candidate (`latest-rc` tag) that contains changes that will likely be in next week's stable release. Merges into `main` are published with the `nightly` tag.
 
-Report and read about issues [here](https://github.com/forcedotcom/mcp/issues). Join the discussion about new features we're considering [here](https://github.com/forcedotcom/mcp/discussions). 
+To display the version of Salesforce DX MCP Server currently installed on your computer, run `npx --offline @salesforce/mcp --version` in a terminal or command window.
 
-<!-- Additional documentation:
+Report and read about issues [here](https://github.com/forcedotcom/mcp/issues). Join the discussion about new features we're considering [here](https://github.com/forcedotcom/mcp/discussions).
 
-TODO: Add links to online docs? -->
+Additional documentation:
+
+- [Salesforce DX MCP Server User Guide](https://github.com/salesforcecli/mcp?tab=readme-ov-file#mcp): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
+- [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
 ## 0.17.1 (August 17, 2025) [latest]
 
