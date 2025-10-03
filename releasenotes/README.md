@@ -13,7 +13,7 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
-## 0.23.0 (September 30, 2025) [latest]
+## 0.23.1 (September 30, 2025) [latest]
 
 * NEW: (Beta) We're happy to announce the Beta release of the Salesforce DX MCP Server!  This release contains these new features:
 
