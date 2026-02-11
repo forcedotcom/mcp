@@ -2,7 +2,7 @@
 
 Here are the new and changed features in recent updates of Salesforce DX MCP Server.
 
-> **NOTE** The tools marked NON-GA are not yet generally available. To use them, specify the `--allow-non-ga-tools` flag in your DX MCP Server configuration. See the README file in the [Salesforce MCP GitHub repository](https://github.com/salesforcecli/mcp). 
+> **NOTE**: The tools marked NON-GA are not yet generally available. To use them, specify the `--allow-non-ga-tools` flag in your DX MCP Server configuration. See the README file in the [Salesforce MCP GitHub repository](https://github.com/salesforcecli/mcp). 
 
 We publish a new stable (that has the `latest` tag) version of Salesforce DX MCP Server on Wednesdays. At the same time we also publish a release candidate (`latest-rc` tag) that contains changes that will likely be in next week's stable release. Merges into `main` are published with the `nightly` tag.
 
@@ -18,16 +18,19 @@ Additional documentation:
 ## 0.26.0 (February 11, 2026) [latest]
 
 * NEW: Since the 0.23.3 release, we added these new toolsets and tools.
-    * The `code-analysis` toolset and its tools are now GA. See [Use MCP Tools to Analyze Your Code](https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html)
+
+    * The `code-analysis` toolset and its tools are now GA. See [Use MCP Tools to Analyze Your Code](https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html).
+
     * The `devops` toolset has these new Non-GA tools.
         * `check_devops_center_commit_status` (NON-GA): Check the current status of a work item committed to DevOps Center.
         * `checkout_devops_center_work_item` (NON-GA): Check out the branch associated with a selected work item by name.
-        * `commit_devops_center_work_item (NON-GA): Commit SFDX project changes and register the commit SHA in DevOps Center.
+        * `commit_devops_center_work_item` (NON-GA): Commit SFDX project changes and register the commit SHA in DevOps Center.
         * `create_devops_center_pull_request` (NON-GA): Commit local changes to a DevOps Center work item’s feature branch.
         * `list_devops_center_projects` (NON-GA): List all DevOps Center projects in a specific org.
         * `list_devops_center_work_items` (NON-GA): List all the work items for a specific  DevOps Center project.
         * `promote_devops_center_work_item` (NON-GA): Promote an approved work item to the next stage in the DevOps Center pipeline.
-    * The `lwc-experts` toolset has these new tools. See [Use DX MCP Tools for LWC (Beta)](https://developer.salesforce.com/docs/platform/lwc/guide/mcp-intro.html)
+
+    * The `lwc-experts` toolset has these new tools. See [Use DX MCP Tools for LWC (Beta)](https://developer.salesforce.com/docs/platform/lwc/guide/mcp-intro.html).
         * `create_lightning_type` (GA): Provide guidance for creating Custom Lightning Types (CLT) for Salesforce applications, Agent actions, Lightning Web Components, and Lightning Platform integrations.
         * `create_lds_graphql_read_query` (GA): Create GraphQL read queries for Lightning Data Service (LDS).
         * `create_lds_graphql_mutation_query` (GA): Provide comprehensive guidance text for creating GraphQL mutation queries.
