@@ -15,13 +15,15 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
-## 0.26.0 (February 11, 2026) [latest]
+## 0.26.0 (February 13, 2026) [latest]
 
 * NEW: Since the 0.23.3 release, we added these new toolsets and tools.
 
-    * The `code-analysis` toolset and its tools are now GA. See [Use MCP Tools to Analyze Your Code](https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html).
+    * The `code-analysis` toolset is now GA. We also added two new tools to the toolset. See [Use MCP Tools to Analyze Your Code](https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html).
+        * `list_code_analyzer_rules`: List all available Code Analyzer rules, which enables an LLM to discover which checks are possible and request specific rule executions.
+        * `query_code_analyzer_results`: Retrieve results from a previous run's output. Filter by file or severity and paginate through results.
 
-    * The `devops` toolset has these new Non-GA tools.
+    * The `devops` toolset has these new Non-GA tools. See [DevOps Center MCP Tools](https://help.salesforce.com/s/articleView?id=platform.devops_center_mcp_intro.htm&type=5).
         * `check_devops_center_commit_status` (NON-GA): Check the current status of a work item committed to DevOps Center.
         * `checkout_devops_center_work_item` (NON-GA): Check out the branch associated with a selected work item by name.
         * `commit_devops_center_work_item` (NON-GA): Commit SFDX project changes and register the commit SHA in DevOps Center.
