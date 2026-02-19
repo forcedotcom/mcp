@@ -15,7 +15,11 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
-## 0.26.4 (February 18, 2026) [latest]
+## 0.26.5 (February 19, 2026) [latest]
+
+* NEW: The `scan_apex_class_for_antipatterns` tool in the `scale-products` toolset is now GA. The tool analyzes Apex class files for performance antipatterns and provides recommendations for fixing them. See the Scale Products MCP Tools [README](https://github.com/salesforcecli/mcp/blob/main/packages/mcp-provider-scale-products/README.md).
+
+## 0.26.4 (February 18, 2026)
 
 * NEW: Since the 0.23.3 release, we added these new toolsets and tools.
 
