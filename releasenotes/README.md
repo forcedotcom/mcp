@@ -15,7 +15,11 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
-## 0.26.9 (February 26, 2026) [latest]
+## 0.26.11 (March 9, 2026) [latest]
+
+- FIX: We improved the `mcp-inspector` documentation. (mcp PR [#401](https://github.com/salesforcecli/mcp/pull/401))
+
+## 0.26.9 (February 26, 2026)
 
 - FIX: We improved the MCP prompts and documentation for the `scale-products` toolset. (mcp PR [#396](https://github.com/salesforcecli/mcp/pull/396))
 
