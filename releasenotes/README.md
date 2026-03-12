@@ -15,7 +15,19 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
-## 0.26.11 (March 9, 2026) [latest]
+## 0.27.0 (March 12, 2026) [latest]
+
+- NEW: We added these GA tools to the `lwc-experts toolset`. See [Use DX MCP Tools for LWC (Beta)](https://developer.salesforce.com/docs/platform/lwc/guide/mcp-intro.html).
+  - `explore_slds_blueprints`: Retrieves SLDS blueprint specifications by name, category, Lightning component, CSS class, or styling hook.
+  - `fetch_lds_graphql_schema`: Fetches a GraphQL schema structure for LDS.
+  - `guide_lo_migration`: Provides guidance to convert a Lightning Out (beta) app into a Lightning Out 2.0 app.
+  - `guide_slds_blueprints`: Retrieves guidance and reference documentation for SLDS blueprints, as well as a complete index of all available blueprints by category.
+  - `lwc-doc-error`: Retrieves information about LWC error messages, including static guidance for resolving the issue based on the error code.
+  - `test_lds_graphql_query`: Tests a GraphQL query against a connected Salesforce org and returns the result. This tool is a sub-tool of the GraphQL query creation tools and must only be called as part of their workflows.
+
+- CHANGE: We removed the `explore_lds_graphql_schema` tool from the `lwc-experts toolset`. Use the new `fetch_lds_graphql_schema` tool instead.
+
+## 0.26.11 (March 9, 2026)
 
 - FIX: We improved the `mcp-inspector` documentation. (mcp PR [#401](https://github.com/salesforcecli/mcp/pull/401))
 
