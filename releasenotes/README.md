@@ -15,7 +15,10 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
-## 0.27.0 (March 12, 2026) [latest]
+## 0.28.2 (March 18, 2026) [latest]
+- FIX: We fixed some under-the-hood bugs.
+
+## 0.27.0 (March 12, 2026)
 
 - NEW: We added these GA tools to the `lwc-experts toolset`. See [Use DX MCP Tools for LWC (Beta)](https://developer.salesforce.com/docs/platform/lwc/guide/mcp-intro.html).
   - `explore_slds_blueprints`: Retrieves SLDS blueprint specifications by name, category, Lightning component, CSS class, or styling hook.
