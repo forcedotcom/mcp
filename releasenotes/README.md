@@ -18,9 +18,8 @@ Additional documentation:
 ## 0.29.1 (March 19, 2026) [latest]
 - NEW: We added these NON-GA tools to the `code-analyzer` toolset.
   - `create-custom-rule` and `generate_xpath_prompt`: Create a custom XPath-based PMD rule by providing an Apex code sample.
-- NEW: We added these NON-GA tools to the `devops` toolset.
+- NEW: We added this NON-GA tool to the `devops` toolset.
   - `resolve_devops_center_deployment_failure`: Diagnose and resolve deployment failures. 
-  - `promote_devops_center_work_item`: Promote approved work items to the next stage in the DevOps Center pipeline.
 
 ## 0.28.2 (March 18, 2026)
 - FIX: We fixed some under-the-hood bugs.
