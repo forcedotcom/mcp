@@ -19,7 +19,7 @@ Additional documentation:
 - NEW: The `experts-validation` toolset is GA. It includes tools that validate and score LWC components for production readiness. (mcp PR [#426](https://github.com/salesforcecli/mcp/pull/426))
   - `validate_and_optimize` (GA): Returns a validation runbook that instructs the agent to run a suite of validators (accessibility, security, best practices, etc.), produce SARIF issues, and score results.
   - `score_issues` (GA): Computes a readiness score (0-100) and quality grade (`draft`, `prototype`, `review-for-production`) from SARIF issues.
-- The `lwc-experts` toolset has these updates. (mcp PR [#426](https://github.com/salesforcecli/mcp/pull/426))
+- NEW/CHANGE/FIX: The `lwc-experts` toolset has these updates. (mcp PR [#426](https://github.com/salesforcecli/mcp/pull/426))
   - NEW: The `lwc-experts` toolset has these new tools.
     - `explore_lbc_components` (GA): Returns full API documentation of LBC by name from markdown knowledge files.
     - `guide_lbc_usage` (GA): Provides an index of available Lightning Base Components (LBC) with short descriptions, helping developers identify which components suit their use case. 
@@ -29,10 +29,9 @@ Additional documentation:
   - CHANGE: The `guide_lwc_security` tool is renamed to `guide_lws_security`. 
 - NEW: The `aura-experts` toolset has new accessibility reviewers for WCAG 2.2 SC 3.3.2, SC 3.2.1, and SC 1.3.5. (mcp PR [#426](https://github.com/salesforcecli/mcp/pull/426))
 
-
 ## 0.29.5 (March 30, 2026)
 - NEW: The `code-analyzer` toolset can now load Abstract Syntax Tree (AST) references for multiple PMD-supported languages. AST references with automated XPath generation are available for Apex and Visualforce. AST references with manual XPath generation are available for HTML and JavaScript. (mcp PR [#416](https://github.com/salesforcecli/mcp/pull/416))
-- The `devops` toolset has these updates.
+- NEW/FIX: The `devops` toolset has these updates.
   - NEW: Bitbucket repositories are now supported. (mcp PR [#415](https://github.com/salesforcecli/mcp/pull/415))
   - FIX: The `get_work_item` tool works across all projects regardless of the pipeline linkage. (mcp PR [#415](https://github.com/salesforcecli/mcp/pull/415))
   - NEW: The `resolve_devops_center_deployment_failure` tool has an improved promotion confirmation message, which now includes the reason that the promotion may resolve a deployment failure. (mcp PR [#423](https://github.com/salesforcecli/mcp/pull/423))
