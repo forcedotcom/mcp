@@ -17,8 +17,8 @@ Additional documentation:
 
 ## 0.30.0 (March 30, 2026) [latest]
 - NEW: The `experts-validation` toolset is GA. It includes tools that validate and score LWC components for production readiness. (mcp PR [#426](https://github.com/salesforcecli/mcp/pull/426))
-  - `validate-and-optimize` (GA): Returns a validation runbook that instructs the agent to run a suite of validators (accessibility, security, best practices, etc.), produce SARIF issues, and score results.
-  - `score-issues` (GA): Computes a readiness score (0-100) and quality grade (`draft`, `prototype`, `review-for-production`) from SARIF issues.
+  - `validate_and_optimize` (GA): Returns a validation runbook that instructs the agent to run a suite of validators (accessibility, security, best practices, etc.), produce SARIF issues, and score results.
+  - `score_issues` (GA): Computes a readiness score (0-100) and quality grade (`draft`, `prototype`, `review-for-production`) from SARIF issues.
 - The `lwc-experts` toolset has these updates. (mcp PR [#426](https://github.com/salesforcecli/mcp/pull/426))
   - NEW: The `lwc-experts` toolset has these new tools.
     - `explore_lbc_components` (GA): Returns full API documentation of LBC by name from markdown knowledge files.
