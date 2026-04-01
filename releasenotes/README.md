@@ -15,6 +15,9 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
+## 0.30.3 (April 1, 2026) [latest]
+- FIX: The `code-analysis` toolset is updated so that the `create_custom_rule` tool respects existing `code-analyzer.yaml` files. Config file detection matches the Code Analyzer Core priority of `.yaml` first, with `.yml` as the fallback. (mcp PR [#432](https://github.com/salesforcecli/mcp/pull/432))
+
 ## 0.30.1 (March 31, 2026) [latest]
 - FIX: The `devops` toolset has these updates. (mcp PR [#428](https://github.com/salesforcecli/mcp/pull/428))
   - The toolset has improved repository owner resolution for Bitbucket and GitHub repos by using the VCS Connect API, with fallback to the existing `SourceCodeRepository` metadata. 
