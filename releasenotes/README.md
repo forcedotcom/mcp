@@ -15,7 +15,13 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
-## 0.30.0 (March 30, 2026) [latest]
+## 0.30.1 (March 31, 2026) [latest]
+- FIX: The `devops` toolset has these updates. (mcp PR [#428](https://github.com/salesforcecli/mcp/pull/428))
+  - The toolset has improved repository owner resolution for Bitbucket and GitHub repos by using the VCS Connect API, with fallback to the existing `SourceCodeRepository` metadata. 
+  - The `checkout_devops_center_work_item` tool automatically sets the work item status to "In Progress" before it checks out the branch.
+  - The `resolve_devops_center_merge_conflict` tool requires explicit user input for each conflicted file and keeps all operations local until the user asks to push.
+
+## 0.30.0 (March 30, 2026)
 - NEW: The `experts-validation` toolset is GA. It includes tools that validate and score LWC components for production readiness. (mcp PR [#426](https://github.com/salesforcecli/mcp/pull/426))
   - `validate_and_optimize` (GA): Returns a validation runbook that instructs the agent to run a suite of validators (accessibility, security, best practices, etc.), produce SARIF issues, and score results.
   - `score_issues` (GA): Computes a readiness score (0-100) and quality grade (`draft`, `prototype`, `review-for-production`) from SARIF issues.
