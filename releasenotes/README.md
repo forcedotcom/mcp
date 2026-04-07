@@ -15,7 +15,13 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
-## 0.30.3 (April 1, 2026) [latest]
+## 0.30.5 (April 3, 2026) [latest]
+- FIX: The `devops` toolset has these changes. (mcp PR [#435](https://github.com/salesforcecli/mcp/pull/435))
+  - The toolset has improved work item fetching in managed package orgs.
+  - The `devops_center_merge_conflict` and `resolve_devops_center_merge_conflict` tools now have Bitbucket repository support, including correct workspace slug resolution and bitbucketcloud provider normalization.
+- CHANGE: The `lwc-experts` toolset has this update. (mcp PR [#434](https://github.com/salesforcecli/mcp/pull/434))
+  - The `guide_lwc_accessibility` tool is renamed to `guide_component_accessibility`, which reflects the tool's broader use beyond LWC components. Users that reference the old tool name must update their DX MCP configuration.
+## 0.30.3 (April 1, 2026)
 - FIX: The `code-analysis` toolset is updated so that the `create_custom_rule` tool respects existing `code-analyzer.yaml` files. Config file detection matches the Code Analyzer Core priority of `.yaml` first, with `.yml` as the fallback. (mcp PR [#432](https://github.com/salesforcecli/mcp/pull/432))
 
 ## 0.30.1 (March 31, 2026)
