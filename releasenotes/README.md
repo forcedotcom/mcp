@@ -15,7 +15,10 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
-## 0.30.5 (April 3, 2026) [latest]
+## 0.30.6 (April 23, 2026) [latest]
+- NEW: All tools in the `devops` toolset are now GA. (mcp PR [#446](https://github.com/salesforcecli/mcp/pull/446))
+
+## 0.30.5 (April 3, 2026)
 - FIX: The `devops` toolset has these changes. (mcp PR [#435](https://github.com/salesforcecli/mcp/pull/435))
   - The toolset has improved work item fetching in managed package orgs.
   - The `devops_center_merge_conflict` and `resolve_devops_center_merge_conflict` tools now have Bitbucket repository support, including correct workspace slug resolution and bitbucketcloud provider normalization.
