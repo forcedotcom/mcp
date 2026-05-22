@@ -4,7 +4,7 @@ Here are the new and changed features in recent updates of Salesforce DX MCP Ser
 
 > **NOTE**: The tools marked NON-GA are not yet generally available. To use them, specify the `--allow-non-ga-tools` flag in your DX MCP Server configuration. See the README file in the [Salesforce MCP GitHub repository](https://github.com/salesforcecli/mcp).
 
-We publish a new stable (that has the `latest` tag) version of Salesforce DX MCP Server on Wednesdays. At the same time we also publish a release candidate (`latest-rc` tag) that contains changes that will likely be in next week's stable release. Merges into `main` are published with the `nightly` tag.
+We publish a new stable (that has the `latest` tag) version of Salesforce DX MCP Server as needed. We also publish a release candidate (`rc` tag) that contains changes that will likely be in the next stable release.
 
 To display the version of Salesforce DX MCP Server currently installed on your computer, run `npx --offline @salesforce/mcp --version` in a terminal or command window.
 
@@ -15,7 +15,10 @@ Additional documentation:
 - [Salesforce DX MCP Server (Beta)](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm): Contains an overview of the DX MCP server, a quick tutorial to get you started, steps to configure the MCP server, and reference information about the MCP tools.
 - [Contribute to Salesforce DX MCP Server](https://github.com/salesforcecli/mcp/blob/main/DEVELOPING.md)
 
-## 0.30.6 (April 23, 2026) [latest]
+## 0.30.12 (May 22, 2026) [latest]
+- NEW: The `code-analyzer` toolset's `create_custom_rule` tool supports multiple engines via a strategy pattern. In addition to PMD/XPath rules, you can now create regex-based custom rules by specifying `engine: "regex"`. (mcp PR [#441](https://github.com/salesforcecli/mcp/pull/441))
+  
+## 0.30.6 (April 23, 2026)
 - NEW: All tools in the `devops` toolset are now GA. (mcp PR [#446](https://github.com/salesforcecli/mcp/pull/446))
 
 ## 0.30.5 (April 3, 2026)
